@@ -1,7 +1,8 @@
 # Torque Transfer
 
-Contains code for Torque Transfer, CSCI 599 Spring 2020. <br/>
-github link: [https://github.com/csci-599-applied-ml-for-games/Torque-Transfer-](https://github.com/csci-599-applied-ml-for-games/Torque-Transfer-) <br/>
+Contains code for Torque Transfer, CSCI 599 Spring 2020.
+
+Github link: [https://github.com/csci-599-applied-ml-for-games/Torque-Transfer-](https://github.com/csci-599-applied-ml-for-games/Torque-Transfer-) <br/>
 
 Objective: 
 The goal of our project is to demonstrate how Transfer Learning can be used across simulators and eventually in a real life environment. <br />
