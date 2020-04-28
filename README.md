@@ -6,9 +6,8 @@ Contains code for Torque Transfer, USC CSCI 599 Spring 2020.
 Github link: [https://github.com/csci-599-applied-ml-for-games/Torque-Transfer-](https://github.com/csci-599-applied-ml-for-games/Torque-Transfer-) <br/>
 
 ## Objective <br />
-Apply Transfer Learning along with Reinforcement Learning: <br/>
-The goal of our project is to demonstrate how Transfer Learning can be used across simulators and eventually in a real life environment. <br />
-Using knowledge gained in one self driving environment, we train the same agent on a similar environment and we compare the learning curves for agent with transfer learning and that without. <br />
+The main objective is to apply Transfer Learning using Reinforcement Learning at the core<br/>
+The goal is to demonstrate how Transfer Learning can be used across simulators and eventually in a real life environment. Using knowledge gained in one self driving environment, we train the same agent on a similar environment and we compare the learning curves for agent with transfer learning and that without. <br />
 
 ## Methodology <br/>
 ### TORCS: <br/>
