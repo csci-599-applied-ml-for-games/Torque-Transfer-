@@ -11,7 +11,7 @@ Using knowledge gained in one self driving environment, we train the same agent 
 
 ## Methodology- <br/>
 ### TORCS: <br/>
-Sensor Input: MLP as a policy network using PPO that uses sensor state from the input in order to generate actions (such as throttle and steering). Uses curriculum learning from simple tasks to more complex ones. <br />
+**Sensor Input**: MLP as a policy network using PPO that uses sensor state from the input in order to generate actions (such as throttle and steering). Uses curriculum learning from simple tasks to more complex ones. <br />
 Image Input: Navigates using image result as input to a CNN, with only steering as the action. PPO is most effective but tends to prioritize “hacking” the reward by avoiding long steps and using shortcuts. <br />
 **Imitation Learning**: Interfaces sensor input to image input to avoid shortcuts and predict the driver action using a CNN. Error function is MSE, masters game after 50 epochs. <br />
 As the Image forward is same as Image backward. This results in state space aliasing. PPO critic only takes state as input, hence gets confused while predicting advantage. This causes fall in learning curve. <br/>
