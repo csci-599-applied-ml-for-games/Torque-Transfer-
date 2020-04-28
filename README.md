@@ -1,3 +1,4 @@
+
 # Torque Transfer
 
 Contains code for Torque Transfer, USC CSCI 599 Spring 2020.
@@ -11,22 +12,20 @@ Using knowledge gained in one self driving environment, we train the same agent 
 
 ## Methodology <br/>
 ### TORCS: <br/>
-**Sensor Input**: MLP as a policy network using PPO that uses sensor state from the input in order to generate actions (such as throttle and steering). Uses curriculum learning from simple tasks to more complex ones. <br />
-**Image Input**: Navigates using image result as input to a CNN, with only steering as the action. PPO is most effective but tends to prioritize “hacking” the reward by avoiding long steps and using shortcuts. <br />
-**Imitation Learning**: Interfaces sensor input to image input to avoid shortcuts and predict the driver action using a CNN. Error function is MSE, masters game after 50 epochs. <br />
-As the Image forward is same as Image backward. This results in state space aliasing. PPO critic only takes state as input, hence gets confused while predicting advantage. This causes fall in learning curve. <br/>
+1. **Sensor Input**: MLP as a policy network using PPO that uses sensor state from the input in order to generate actions (such as throttle and steering). Uses curriculum learning from simple tasks to more complex ones. <br />
+2. **Image Input**: Navigates using image result as input to a CNN, with only steering as the action. PPO is most effective but tends to prioritize “hacking” the reward by avoiding long steps and using shortcuts. <br />
+3. **Imitation Learning**: Interfaces sensor input to image input to avoid shortcuts and predict the driver action using a CNN. Error function is MSE, masters game after 50 epochs. <br /> As the Image forward is same as Image backward. This results in state space aliasing. PPO critic only takes state as input, hence gets confused while predicting advantage. This causes fall in learning curve. <br/>
 
 ### Donkey Car Sim: <br />
-To train the Donkey Car, same model was used as in TORCS but with DDQN as the RL algorithm. <br />
-One model was trained entirely from ground up with the model architecture as described before. <br />
-Another model was trained using a transfer learning based agent where the agent was pre-trained on TORCS. <br />
-The transfer learning was implemented by replacing just the final Dense layer and allowing all layers to be trainable. <br />
+1. **Image Input**: The image dimesion is kept the same as TORCS and a similar track is also chosen to provide similar environment for training. <br />
+2. **Ground up training**: One model was trained entirely from ground up with the model architecture as described before. <br />
+3. **Transfer Learning based training**: Another model was trained using a transfer learning based agent where the agent was pre-trained on TORCS. The transfer learning was implemented by replacing just the final Dense layer and allowing all layers to be trainable. <br />
 
 ## Results <br />
 The agent which used Transfer Learning from TORCS to Donkey Car Simulator performed better in the following ways: <br/>
 1. Has a higher average reward. <br />
 2. Takes fewer episodes to train. <br />
-3. The agent using transfer learning has way more stability as compared to the agent which trained from ground up. <br />
+3. Has better stability in when driving in test mode.<br />
 
 ### The following video shows the demo of our project with explanation: <br />
 
@@ -34,6 +33,9 @@ The agent which used Transfer Learning from TORCS to Donkey Car Simulator perfor
 
 ### Here is the link to the paper: <br />
 [https://drive.google.com/file/d/1szvbnzQd4vPkF-I6dM8p47iKH5mu0oIF/view?usp=sharing](https://drive.google.com/file/d/1szvbnzQd4vPkF-I6dM8p47iKH5mu0oIF/view?usp=sharing) <br/>
+
+### Here is the link to the presentation: <br />
+[https://drive.google.com/file/d/1JZsqM1Tf6chaGBK5BR000iyisoCKoxu6](https://drive.google.com/file/d/1JZsqM1Tf6chaGBK5BR000iyisoCKoxu6) <br/>
 
 ## Contributors <br/>
 Shashank Hegde - [https://www.linkedin.com/in/karkala-shashank-hegde/](https://www.linkedin.com/in/karkala-shashank-hegde/) <br/>
