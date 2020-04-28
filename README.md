@@ -35,7 +35,8 @@ The agent which used Transfer Learning from TORCS to Donkey Car Simulator perfor
 3. The agent using transfer learning has way more stability as compared to the agent which trained from ground up. <br />
 
 The following video shows the demo of our project with explanation- <br />
-[![Click here to play the video](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=LXKpp5XyRVA) <br />
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/184LlwAaF-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Here is the link to the paper written by us- <br />
 [https://drive.google.com/file/d/1szvbnzQd4vPkF-I6dM8p47iKH5mu0oIF/view?usp=sharing](https://drive.google.com/file/d/1szvbnzQd4vPkF-I6dM8p47iKH5mu0oIF/view?usp=sharing) <br/>
@@ -44,4 +45,4 @@ Contributors: <br/>
 Shashank Hegde - [https://www.linkedin.com/in/karkala-shashank-hegde/](https://www.linkedin.com/in/karkala-shashank-hegde/) <br/>
 Sriram Ramaswamy - [https://www.linkedin.com/in/sriramvera/](https://www.linkedin.com/in/sriramvera/) <br/>
 Sumeet Bachani - [https://www.linkedin.com/in/sumeetbachani/](https://www.linkedin.com/in/sumeetbachani/) <br/>
-Tushak Kumar - [https://www.linkedin.com/in/tushartk/](https://www.linkedin.com/in/tushartk/) <br/>
+Tushar Kumar - [https://www.linkedin.com/in/tushartk/](https://www.linkedin.com/in/tushartk/) <br/>
