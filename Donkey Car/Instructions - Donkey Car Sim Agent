@@ -1,0 +1,19 @@
+Instructions to run Donkey Car Simulator agent from ground up:
+
+1. Go to https://github.com/tawnkramer/gym-donkeycar/releases and download DonkeySim zip file based on your system requirements.
+
+2. Run the command pip install git+https://github.com/tawnkramer/gym-donkeycar.git
+
+3. Open the python file: DonkeyCarTransfer.py
+
+4. Define the path of the donkey_sim.x86_64 which can be found in the folder DonkeySim folder under the SIM_PATH variable on line 25.
+
+5. Define the model path where you want to save the weights file and make sure the folder is made prior to running the code, this is done under under MODEL_PATH on line 26.(make sure to give a new name everytime to the weights file to make new weight file everytime code is run)
+
+6. Make sure the MODEL_TYPE=4 for running the model to train the agent from ground up.
+
+7. Run the command: python DonkeyCartransfer.py
+
+8. This also generates the tensorboard logs which creates train folder under logs and make sure train folder name is changed everytime you run the python file.
+
+9. To run the weights file in test mode, run the command: python DonkeyCartransfer.py --test
