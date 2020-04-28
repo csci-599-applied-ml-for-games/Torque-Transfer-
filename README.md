@@ -12,7 +12,7 @@ Using knowledge gained in one self driving environment, we train the same agent 
 ## Methodology- <br/>
 ### TORCS: <br/>
 **Sensor Input**: MLP as a policy network using PPO that uses sensor state from the input in order to generate actions (such as throttle and steering). Uses curriculum learning from simple tasks to more complex ones. <br />
-Image Input: Navigates using image result as input to a CNN, with only steering as the action. PPO is most effective but tends to prioritize “hacking” the reward by avoiding long steps and using shortcuts. <br />
+**Image Input**: Navigates using image result as input to a CNN, with only steering as the action. PPO is most effective but tends to prioritize “hacking” the reward by avoiding long steps and using shortcuts. <br />
 **Imitation Learning**: Interfaces sensor input to image input to avoid shortcuts and predict the driver action using a CNN. Error function is MSE, masters game after 50 epochs. <br />
 As the Image forward is same as Image backward. This results in state space aliasing. PPO critic only takes state as input, hence gets confused while predicting advantage. This causes fall in learning curve. <br/>
 
@@ -28,11 +28,11 @@ The agent which used Transfer Learning from TORCS to Donkey Car Simulator perfor
 2. Takes fewer episodes to train. <br />
 3. The agent using transfer learning has way more stability as compared to the agent which trained from ground up. <br />
 
-## The following video shows the demo of our project with explanation- <br />
+### The following video shows the demo of our project with explanation- <br />
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/184LlwAaF-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Here is the link to the paper- <br />
+### Here is the link to the paper- <br />
 [https://drive.google.com/file/d/1szvbnzQd4vPkF-I6dM8p47iKH5mu0oIF/view?usp=sharing](https://drive.google.com/file/d/1szvbnzQd4vPkF-I6dM8p47iKH5mu0oIF/view?usp=sharing) <br/>
 
 ## Contributors: <br/>
