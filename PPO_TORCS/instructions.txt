@@ -1,5 +1,10 @@
 PPOTorcs.py has the code to train an agent defined in lib/model, to drive TORCS on sensor inputs.
+python PPOTorcs.py
+
 PPOTorcsPlay.py can load the trained model and simulate a race
+python PPOTorcsPlay.py
 
 snakeoil3_gym1.py has code to collect images for imitaion learning.
-imitationLearning.ipynb has code to train a CNN to the collected images.
+python snakeoil3_gym1.py
+
+imitationLearning.ipynb has code to train a CNN to the collected images. Execute this notebook using Jupyter
