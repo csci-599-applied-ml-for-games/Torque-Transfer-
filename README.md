@@ -35,7 +35,7 @@ The agent which used Transfer Learning from TORCS to Donkey Car Simulator perfor
 3. The agent using transfer learning has way more stability as compared to the agent which trained from ground up. <br />
 
 The following video shows the demo of our project with explanation- <br />
-[![Video not found](https://www.youtube.com/watch?v=LXKpp5XyRVA)](https://www.youtube.com/watch?v=LXKpp5XyRVA) <br />
+[![Click here to play the video](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=LXKpp5XyRVA) <br />
 
 Here is the link to the paper written by us- <br />
 [https://drive.google.com/file/d/1szvbnzQd4vPkF-I6dM8p47iKH5mu0oIF/view?usp=sharing](https://drive.google.com/file/d/1szvbnzQd4vPkF-I6dM8p47iKH5mu0oIF/view?usp=sharing) <br/>
